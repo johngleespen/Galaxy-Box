@@ -149,6 +149,7 @@
               {% render 'icon-caret' %}
             </button>
           </div>
+
         </slider-component>
         {%- if first_3d_model -%}
           <button
@@ -331,7 +332,8 @@
                     {{ product.title | escape }}
                   </h2>
                 </a>
-              </div>
+              </div> 
+              <p>Hello</p>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
